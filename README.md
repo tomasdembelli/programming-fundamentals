@@ -5,20 +5,27 @@ This repository explains the programming fundamentals with some practical exampl
 Following is the general outline and the flowchart of a program that runs health check for a given list of URLs. 
 
 ## Outline
+
+Outline of the health check program.
 ![Diagram](./media/Programming%20Fundamentals.svg)
 
 ## Flowchart
+
 A flowchart* is a type of diagram that represents a workflow or process. A flowchart can also be defined as a diagrammatic representation of an algorithm, a step-by-step approach to solving a task.
+
+Flowchart of the health check algorithm.
 ![Flowchart](./media/HealthCheck.svg)
 
 *Flowchart [wiki](https://en.wikipedia.org/wiki/Flowchart).
 
 [Iodraw](https://www.iodraw.com/diagram/) online flowchart application.
 
+
 ## Pseudo Code
 
 Pseudo code is a term which is often used in programming and algorithm based fields. It is a methodology that allows the programmer to represent the implementation of an algorithm. [Source](https://www.geeksforgeeks.org/how-to-write-a-pseudo-code/)
 
+Pseudo code for the health check progam.
 ```
 function extractURLs(filePath) {
     Open file given by the filePath.
@@ -47,7 +54,7 @@ function main() {
 
 ## Code
 
-A Go program with placeholder functions for the sake of simplicity.
+A Go program running health check.  Placeholder functions are used for the sake of simplicity.
 
 ```Go
 package main
