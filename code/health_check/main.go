@@ -1,8 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func extractURLs(filePath string) []string {
+	f, err := os.Open(filePath)
+	if err != nil {
+		return []string{}
+	}
+
+	input := bufio.NewScanner(f)
+	for input.Scan() {
+		fmt.Println(input.Text())
+	}
+
 	var URLs []string = []string{
 		"http://serviceA",
 		"http://serviceB",
