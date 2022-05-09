@@ -1,16 +1,17 @@
 # Programming Fundamentals
 
-This repository explains the programming fundamentals with some practical examples.
+This repository explains the programming fundamentals with some practical examples written in [Go](https://go.dev/).
 
 ## Intro
+
+Go is a compiled language.
+Let's have a look at the definitions of some terms that we need to learn to be able understand how a source code (a text file) is compiled into an executable (machine code.)
 
 In computing, [source code](https://en.wikipedia.org/wiki/Source_code) is any collection of code written using a human-readable programming language, usually as plain text. The source code of a program is specially designed to facilitate the work of computer programmers, who specify the actions to be performed by a computer mostly by writing source code. The source code is often transformed by an assembler or compiler into binary machine code that can be executed by the computer. The machine code might then be stored for execution at a later time.
 
 A [compiler](https://en.wikipedia.org/wiki/Compiler) is a computer program that translates computer code written in one programming language (the source language) into another language (the target language). The name "compiler" is primarily used for programs that translate source code from a high-level programming language to a lower level language (e.g. assembly language, object code, or machine code) to create an executable program.
 
 In computer programming, [machine code](https://en.wikipedia.org/wiki/Machine_code) is any low-level programming language, consisting of machine language instructions, which are used to control a computer's central processing unit (CPU). Each instruction causes the CPU to perform a very specific task, such as a load, a store, a jump, or an arithmetic logic unit (ALU) operation on one or more units of data in the CPU's registers or memory.
-
-Following is the general outline and the flowchart of a program that runs health check for a given list of URLs. 
 
 A software program usually accepts an input (a type of request) from a user, or from an another service/application, and, returns a response after doing some operations to fullfil this request.
 
@@ -68,6 +69,8 @@ go run hello_world.go  # assuming that this is the file name instead of main.go
 
 ## Example: Running a health check for a list of services.
 
+Following is the general outline and the flowchart of a program that runs health check for a given list of URLs. 
+
 ### Outline
 
 Outline of the health check program.
@@ -113,6 +116,21 @@ function main() {
     Print out the results.
 }
 ```
+
+Before going any further and start writing code, we should mention the following subjects that are going to be used in the application.
+- [Pointers](https://go.dev/tour/moretypes/1): Intro to reference types. 
+- An aggregate type: `Array`. Initialization, accessing its items.
+- A reference type: `Slice`. What is a reference type? The relation to the Array type.
+- Boolean type: `true` and `false`. The zero value is `false`.
+- [Comparison operators](https://go.dev/ref/spec#Comparison_operators): Use cases.
+- [Assignment statements](https://go.dev/ref/spec#Assignments)
+- [`if` statement](https://go.dev/tour/flowcontrol/5): Control flow - decision.
+- [`for` statement](https://go.dev/tour/flowcontrol/1): Control flow - loop.
+- `continue` statement in `for` loops.
+- Using `fmt.Println` for debugging.
+- [`gofmt`](https://pkg.go.dev/cmd/gofmt): Format the source code. `gofmt -w .`
+- Referencing a package with its name inferred from the import string.
+
 
 ### Code
 
